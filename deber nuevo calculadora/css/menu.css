@@ -1,0 +1,64 @@
+:root {
+    --primer-color: #c02122;
+    --segundo-color: #44b09e;
+    --tercer-color: #ffcf3f;
+    --color-base: #e7e9e9;
+    --color-texto: #ffffff;
+    --sombras-letras: #fe4c4a;
+    --sombreado-nav: #6c6f74;
+    --sombreado-nav2: #070000;
+    --texto-oscuro: #b8b3b3;
+    --fuente1-font-family: 'Indie Flower', cursive;
+    --fuente2-font-family: 'Rubik Iso', cursive;
+    --fuente3-font-family: 'Single Day', cursive;
+    --fuente4-font-family: 'Tilt Prism', cursive;
+    --fuente5-font-family: 'Bebas Neue', cursive;
+}
+body {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    background-color: var(--segundo-color);
+    font-family: var(--fuente5-font-family);
+
+}
+
+div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h1 {
+    color: var(--sombreado-nav2);
+    font-size: 50px;
+}
+
+.opciones div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.opcion {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 350px;
+    height: 60px;
+    border-radius: 10px;
+    line-height: 60px;
+    font-size: 25px;
+    color: var(--texto-oscuro);
+    font-weight: bold;
+    background-image: linear-gradient(to right top, #000103, #181f24, #3a4041, #4d514f, #777972);
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.opcion:hover {
+    height: 70px;
+    line-height: 70px;
+    background-image: linear-gradient(to right top, #f8f6ef, #948f99, #6b6966, #606563, #323233);
+}
